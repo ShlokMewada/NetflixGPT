@@ -91,8 +91,6 @@ const Login = () => {
     }
   };
 
-  console.log("login render" + isSignInForm);
-
   return (
     <div>
       <Header />
