@@ -28,3 +28,6 @@ yarn-error.log*
 /src/utils/constants.js
 /src/utils/firebase.js
 /src/hooks
+/src/utils/gemini.js
+
+/.env
