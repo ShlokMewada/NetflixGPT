@@ -22,6 +22,8 @@ const Header = () => {
       });
   };
 
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -61,7 +63,7 @@ const Header = () => {
             className="py-2 px-4 mx-4 my-2 bg-blue-800 hover:bg-opacity-70 text-white rounded-lg"
             onClick={handleGptSearchClick}
           >
-            GPT Search
+            {showGptSearch ? "Home" : "GPT Search"}
           </button>
           <img className="w-[60px]" src={user.photoURL} alt="userIcon" />
           <button
