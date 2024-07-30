@@ -49,7 +49,7 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className="w-1/2">
+    <div className="w-full md:w-8/12 mx-auto">
       <form
         className="p-6"
         onSubmit={(e) => {
@@ -64,7 +64,7 @@ const GptSearchBar = () => {
             placeholder="what would you like to watch today?"
           />
           <button
-            className="py-3 px-10 bg-red-700 rounded-lg hover:bg-red-600 text-white"
+            className="py-2 px-6 md:py-3 md:px-10  bg-red-700 rounded-lg hover:bg-red-600 text-white"
             onClick={handleGptSearchClick}
           >
             Search
