@@ -13,8 +13,8 @@ const SecondaryContainer = () => {
     return;
 
   return (
-    <div className="bg-black">
-      <div className="relative flex flex-col -mt-64 z-20">
+    <div className="absolute w-full bg-black">
+      <div className="flex flex-col -mt-64 z-20">
         <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
         <MovieList title={"Popular"} movies={popularMovies} />
         <MovieList title={"Top Rated"} movies={topRatedMovies} />
