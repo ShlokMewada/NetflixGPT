@@ -13,7 +13,7 @@ const MovieList = ({ title, movies }) => {
     const length = movieResultsFinal.length;
     return {
       dots: false,
-      infinite: length > 1,
+      infinite: false,
       speed: 500,
       slidesToShow: Math.min(7, length),
       slidesToScroll: Math.min(2, length),
@@ -23,8 +23,8 @@ const MovieList = ({ title, movies }) => {
           settings: {
             slidesToShow: Math.min(3, length),
             slidesToScroll: Math.min(3, length),
-            infinite: length > 3,
-            dots: length > 3,
+            infinite: false,
+            dots: false,
           },
         },
         {
@@ -43,6 +43,7 @@ const MovieList = ({ title, movies }) => {
           },
         },
       ],
+      variableWidth: true,
     };
   };
 
